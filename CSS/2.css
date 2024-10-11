@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    border-bottom: 1px solid #ccc;
+}
+
+.flex{
+    display: flex; /*sắp xếp các phần tử con theo chiều ngang hoặc dọc*/
+}
+
+ul{
+    list-style: none; /*Loại bỏ ký hiệu mặc định (bullet points) cho danh sách*/
+}
+
+.j-between{
+    justify-content: space-between; /*Phân bổ các phần tử con trong container sao cho khoảng cách giữa chúng được trải đều, với phần tử đầu tiên và cuối cùng sát cạnh container.*/
+}
+
+.a-center{
+    align-items: center; /*Căn giữa các phần tử con theo trục dọc*/
+}
+div img{
+    width: 120px; 
+}
+
+.header p{
+    font-size: 23px;  
+}
+
+ul li{
+    margin-left: 20px;
+    font-size: 23px;
+}
+.active{
+    padding: 20px;                  /* Định dạng cho phần tử đang hoạt động (active) với padding 20px, đường viền 1px màu xám nhạt, bo góc 10px.*/
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.active:hover{
+    background-color: #694E4E ;
+    color: #ffffff;
+    cursor: pointer;
+}
+.squares{
+    display: flex; /*Tạo một container linh hoạt với Flexbox*/
+}
+.square{
+    width: 200px;     /*Tạo một hình vuông với kích thước 200x200px và nền màu xanh lá cây*/
+    height: 200px;
+    background: green;
+}
+.rectangle{
+    width: 200px;     /*Tạo một hình chữ nhật với kích thước 200x280px và nền màu đỏ*/
+    height: 280px;
+    background: red;
+}
+.s-rectangle{
+    width: 240px;         /*Tạo một hình chữ nhật với kích thước 240x260px và nền màu xanh dương*/
+    height: 260px;
+    background: blue;
+}
+.j-end{
+    justify-content: flex-end;   /*Căn các phần tử con về phía cuối của container theo chiều ngang.*/
+}
+
+.ml-200{
+    margin-left: 200px; /*Tạo khoảng cách bên trái cho phần tử là 200px*/
+}
+

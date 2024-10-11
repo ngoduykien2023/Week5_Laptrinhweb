@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    background-color: #ffffff;
+    color: #5a5a5a;
+    font-family: 'Lato', sans-serif;             /**/
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+}
+ul, ol{
+    list-style: none;                /*Danh sách không có ký hiệu*/
+}
+a{
+    text-decoration: none;             /*liên kết không gạch chân*/
+}
+
+.container{
+    max-width: 1200px;
+    background-color: #dfdfdf;          /*Khung chứa chính với chiều rộng tối đa 1200px, nền xám nhạt, padding 30px*/
+    padding: 30px;
+}
+.row{
+    display: flex;               /*Dùng Flexbox để xếp các cột ngang*/
+    
+}
+.col{
+    width: calc(100%/6);
+    margin-right: 10px;
+    background-color: #ffffff;                /*Mỗi cột chiếm 1/6 chiều rộng, cách nhau 10px, nền trắng, bo góc 3px, có đổ bóng nhẹ.*/
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px 0px rgb(88, 48, 48);
+}
+
+img{
+    width: 100%;    /*Hình ảnh chiếm 100% chiều rộng cột*/
+    
+}
+.col:last-child{
+    margin-right: 0px;    /*Cột cuối cùng không có margin bên phải.*/
+}
+.icon-list{
+    display: flex;
+    justify-content: space-between;      /*Biểu tượng xếp ngang cách đều, kích thước nhỏ (10px).*/
+    font-size: 10px;
+}
+.col-content{
+    padding: 6px;
+    background-color: #fdfafa;         /*Nội dung cột có padding 6px và nền màu trắng nhạt*/
+}
+
+div .fas{
+    color: #ffd93d;                   /*Biểu tượng có màu vàng*/
+}
+
+.discount-price{
+    text-decoration: line-through;         
+    margin-right: 5px;
+}
+.discount{
+    font-size: 14px;                   /*Giá giảm được gạch ngang, khoảng cách nhỏ với giá hiện tại.*/
+    margin: 5px 0;
+}
+
+.re-price{
+    margin-top: 4px;
+    color: #D9534F;             /*Giá hiện tại màu đỏ, đậm*/
+    font-weight: 800;
+}

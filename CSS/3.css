@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    width: 800px;                   /*Footer có chiều rộng 800px, sử dụng Flexbox để sắp xếp các phần tử con, nền màu đen (#111), và có padding 20px*/
+    display: flex;
+    background-color: #111;
+    padding: 20px;
+}
+
+.about{
+    width: 60%;               /*Chiếm 60% chiều rộng của footer, cách bên phải 20px*/
+    margin-right: 20px;
+}
+
+.links{
+    width: 40%;            /*Chiếm 40% chiều rộng*/
+}
+
+h2{ 
+    color: #fff;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #666;             /*Heading (h2) có màu trắng, khoảng cách dưới (padding-bottom) 20px, viền dưới màu xám (#666).*/
+    margin-bottom: 20px;
+}
+
+p{
+    color: #666;         
+} 
+
+a{
+    text-decoration: none;           /*Liên kết (a) không gạch chân và có màu xám (#666)*/
+    color: #666;
+}
+
+ul{
+    list-style: none;     /*Danh sách không có ký hiệu (list-style: none)*/
+    
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;         /*Sử dụng Flexbox để sắp xếp các phần tử với khoảng cách đều*/
+}
+
+a:hover{
+    color: #4D96FF;
+    transition: all 1s;     /*Hover chuyển sang màu xanh (#4D96FF) với hiệu ứng chuyển đổi trong 1 giây.*/
+}
+
